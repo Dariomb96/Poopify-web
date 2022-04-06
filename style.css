@@ -89,7 +89,13 @@ footer {
     grid-row: row-start 2 / span 9;
     background-size: cover;
     background-position: center center;
+    transition: transform .5s;
+    border-radius: 10px;
 
+}
+
+.tarjetaGrande:hover {
+    transform: scale(1.02);
 }
 
 .tarjetaChica1 {
@@ -97,6 +103,12 @@ footer {
     grid-row: row-start 2 / span 3;
     background-size: cover;
     background-position: center center;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+
+.tarjetaChica1:hover {
+    transform: scale(1.05);
 }
 
 .tarjetaChica2 {
@@ -104,6 +116,12 @@ footer {
     grid-row: row-start 5 / span 3;
     background-size: cover;
     background-position: center center;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+
+.tarjetaChica2:hover {
+    transform: scale(1.05);
 }
 
 .tarjetaChica3 {
@@ -111,6 +129,12 @@ footer {
     grid-row: row-start 8 / span 3;
     background-size: cover;
     background-position: center center;
+    transition: transform .5s;
+    border-radius: 10px;
+}
+
+.tarjetaChica3:hover {
+    transform: scale(1.05);
 }
 
 .titulo {
