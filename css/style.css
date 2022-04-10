@@ -17,7 +17,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(107, 2, 107);
+    background: #281644;
 }
 
 /* Handle on hover */
@@ -25,16 +25,11 @@
     background: rgb(61, 4, 61);
 }
 
-html {
-    height: 100%;
-}
+
 
 body {
     background-color: black;
     font-family: 'Quicksand', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(16, [col-start] 1fr);
-    grid-template-rows: repeat(12, [row-start] 1fr);
     grid-gap: 20px;
     height: 100%;
 }
@@ -43,7 +38,7 @@ body {
     grid-column: col-start 2 / span 14;
     grid-row: row-start 1 / span 1;
     background-color: black;
-    border-bottom: 0.1rem solid purple;
+    border-bottom: 0.1rem solid #593196;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -59,22 +54,30 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid purple;
     padding-top: 0.5rem
 }
+.gridc{
+    display: grid;
+    grid-template-columns: repeat(16, [col-start] 1fr);
+    grid-template-rows: repeat(12, [row-start] 1fr);
+    grid-gap: 20px;
+}
+#indexcards{
+    min-height: 70vh;
 
+}
 .tapa {
     width: 12rem;
     margin: 0.5rem;
     border-radius: 1rem;
-    box-shadow: 8px 8px 0 -3px black, 8px 8px 0 -1px purple;
+    box-shadow: 8px 8px 0 -3px black, 8px 8px 0 -1px #593196;
 }
 
 .tapaRedonda {
     width: 12rem;
     height: 12rem;
     border-radius: 10rem;
-    box-shadow: 8px 8px 0 -3px black, 8px 8px 0 -1px purple;
+    box-shadow: 8px 8px 0 -3px black, 8px 8px 0 -1px #593196;
 }
 
 .tapaChica {
@@ -85,8 +88,8 @@ footer {
 /*index.html*/
 
 .tarjetaGrande {
-    grid-column: col-start 2 / span 10;
-    grid-row: row-start 2 / span 9;
+    grid-column: col-start 1 / span 12;
+    grid-row: row-start 1 / span 12;
     background-size: cover;
     background-position: center center;
     transition: transform .5s;
@@ -99,8 +102,8 @@ footer {
 }
 
 .tarjetaChica1 {
-    grid-column: col-start 12 / span 4;
-    grid-row: row-start 2 / span 3;
+    grid-column: col-start 13 / span 4;
+    grid-row: row-start 1 / span 4;
     background-size: cover;
     background-position: center center;
     transition: transform .5s;
@@ -112,8 +115,8 @@ footer {
 }
 
 .tarjetaChica2 {
-    grid-column: col-start 12 / span 4;
-    grid-row: row-start 5 / span 3;
+    grid-column: col-start 13 / span 4;
+    grid-row: row-start 5 / span 4;
     background-size: cover;
     background-position: center center;
     transition: transform .5s;
@@ -125,8 +128,8 @@ footer {
 }
 
 .tarjetaChica3 {
-    grid-column: col-start 12 / span 4;
-    grid-row: row-start 8 / span 3;
+    grid-column: col-start 13 / span 4;
+    grid-row: row-start 9 / span 4;
     background-size: cover;
     background-position: center center;
     transition: transform .5s;
@@ -141,6 +144,7 @@ footer {
     grid-column: col-start 2 / span 14;
     grid-row: row-start 11 / span 1;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .texto {
@@ -150,8 +154,6 @@ footer {
     justify-content: flex-end;
     color: azure;
     text-align: left;
-    margin-left: 0.5rem;
-    margin-top: -0.5rem;
     text-shadow:
         0.05em 0 black,
         0 0.05em black,
@@ -166,8 +168,8 @@ footer {
 /*perfil.html*/
 
 .perfil {
-    grid-column: col-start 2 / span 14;
-    grid-row: row-start 2 / span 3;
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 1 / span 3;
     display: flex;
 }
 
@@ -184,28 +186,29 @@ footer {
 }
 
 .navMenu {
-    grid-column: col-start 2 / span 12;
-    grid-row: row-start 5 / span 1;
+    grid-column: col-start 1 / span 12;
+    grid-row: row-start 4 / span 1;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    border-bottom: 1px solid purple;
+    border-bottom: 1px solid #593196;
     max-width: 100%;
 }
 
 .navMenuBotones {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 5rem;
+    padding-left: 5rem;
     align-self: center;
+    text-decoration: none;
 }
 
 .bordeMenu {
-    border-right: 1px solid purple;
+    border-right: 1px solid #593196;
 }
 
 .carrusel {
-    grid-column: col-start 2 / span 12;
-    grid-row: row-start 6 / span 6;
+    grid-column: col-start 1 / span 12;
+    grid-row: row-start 5 / span 9;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -219,31 +222,47 @@ footer {
 
 /*Artista.html*/
 
+.gridArtista{
+    display: grid;
+    grid-template-columns: repeat(16, [col-start] 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
 .banner {
-    grid-column: col-start 2 / span 14;
-    grid-row: row-start 2 / span 3;
-    box-shadow: 8px 8px 0 -3px black, 8px 8px 0 -1px purple;
+    grid-column: col-start 1 / span 16;
+    box-shadow: 8px 8px 0 -3px black, 8px 8px 0 -1px #593196;
 }
 
 .mainArtista {
-    grid-column: col-start 2 / span 11;
-    grid-row: row-start 5 / span 1;
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 4 / span 1;
 }
 
 .pepito {
-    height: 100%;
+    height: 25vh;
     width: 100%;
+    background-position: center center;
     object-fit: cover;
 }
 
 .artista {
-    grid-column: col-start 14 / span 2;
-    grid-row: row-start 5 / span 7;
+    grid-column: col-start 14 / span 4;
+    grid-row: row-start 4 / span 4;
     align-content: center;
     text-align: center;
-    border-left: 1px solid purple;
+    border-left: 1px solid #593196;
+    min-height: 44vh;
 }
 
+.carruselArtista {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 5 / span 4;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow-x: hidden;
+}
 .seguir {
     margin-top: 0.5rem;
     width: 5rem;
@@ -252,13 +271,14 @@ footer {
     padding: 0.1rem;
     background-color: black;
     color: aliceblue;
-    box-shadow: 5px 5px 0 -3px black, 5px 5px 0 -1px purple;
+    box-shadow: 5px 5px 0 -3px black, 5px 5px 0 -1px #593196;
 }
 
 .redes {
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
+    text-align: center;
 }
 
 .linkRedes {
@@ -267,7 +287,7 @@ footer {
 
 .acercaDe {
     grid-column: col-start 2 / span 12;
-    grid-row: row-start 6 / span 6;
+    grid-row: row-start 5 / span 6;
     overflow: auto;
 
 }
@@ -281,8 +301,8 @@ footer {
 /*Album.html*/
 
 .albumDiv {
-    grid-column: col-start 2 / span 10;
-    grid-row: row-start 2 / span 3;
+    grid-column: col-start 1 / span 11;
+    grid-row: row-start 1 / span 3;
     display: flex;
 }
 
@@ -296,7 +316,7 @@ footer {
 
 .infoCompra {
     grid-column: col-start 12 / span 2;
-    grid-row: row-start 2 / span 2;
+    grid-row: row-start 1 / span 2;
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
@@ -309,26 +329,28 @@ footer {
     padding: 0.1rem;
     background-color: black;
     color: aliceblue;
-    box-shadow: 5px 5px 0 -3px black, 5px 5px 0 -1px purple;
+    box-shadow: 5px 5px 0 -3px black, 5px 5px 0 -1px #593196;
 }
 
 .albumReproductor {
-    grid-column: col-start 2 / span 12;
-    grid-row: row-start 5 / span 6;
+    grid-column: col-start 1 / span 13;
+    grid-row: row-start 4 / span 7;
 }
 
 .relacionado {
-    grid-column: col-start 14 / span 2;
-    grid-row: row-start 3 /span 9;
+    grid-column: col-start 14 / span 4;
+    grid-row: row-start 2 /span 9;
     text-align: center;
     overflow: hidden;
+    border-left: 1px solid #593196;
 }
 
 /*carrito.html*/
 
 .agregarMetodo {
-    grid-column: col-start 4 / span 3;
+    grid-column: col-start 1 / span 5;
     grid-row: row-start 2 /span 5;
+    border: 1px solid #593196
 }
 
 fieldset {
@@ -357,9 +379,9 @@ input {
 }
 
 .carrito {
-    grid-column: col-start 10 / span 6;
+    grid-column: col-start 10 / span 8;
     grid-row: row-start 2 / span 6;
-    box-shadow: 5px 5px 0 -3px black, 5px 5px 0 -1px purple;
+    box-shadow: 5px 5px 0 -3px black, 5px 5px 0 -1px #593196;
 }
 
 .albumCarrito {
@@ -381,7 +403,7 @@ input {
     align-self: center;
     margin-left: auto;
     margin-right: 1rem;
-    border-left: 1px solid purple;
+    border-left: 1px solid #593196;
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -477,8 +499,9 @@ input {
     }
 
     #artistaTapa {
-        width: 75%;
-        height: 75%;
+        width: 12rem;
+        height: 12rem;
+        margin-left: 10%;
     }
 
     #artistaDesc {
@@ -610,7 +633,7 @@ input {
     /*album.html*/
 
     .albumDiv {
-        grid-column: col-start 2 / span 9;
+        grid-column: col-start 1 / span 9;
     }
 
     #tapaAlbum {
@@ -618,15 +641,15 @@ input {
     }
 
     .infoCompra {
-        grid-column: col-start 11 / span 2;
+        grid-column: col-start 10 / span 3;
     }
 
     .albumReproductor {
-        grid-column: col-start 2 / span 11;
+        grid-column: col-start 1 / span 12;
     }
 
     .relacionado {
-        grid-column: col-start 13 / span 3;
+        grid-column: col-start 13 / span 5;
     }
 }
 
