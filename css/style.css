@@ -411,10 +411,6 @@ input {
 
 
 @media (max-width: 600px) {
-    * {
-        font-size: 90%;
-    }
-
     input {
         overflow: hidden;
     }
@@ -443,6 +439,10 @@ input {
 
     /*perfil*/
 
+    .perfil{
+        max-height: 50%;
+    }
+    
     .tapaRedonda {
         width: 5rem;
         height: 5rem;
@@ -455,19 +455,27 @@ input {
 
     .navMenu {
         grid-column: col-start 2 / span 14;
-        font-size: 1.1rem;
+        grid-row: row-start 2 / span 1;
+        margin-top: 5rem;
     }
 
     .navMenuBotones {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 0%;
+        padding-right: 3%;
+    }
+    .fsbtn{
+        font-size: 1rem;
     }
 
     .carrusel {
         grid-column: col-start 2 / span 13;
+        grid-row: row-start 3 / span 10;
         justify-content: flex-start;
     }
 
+    .album{
+        width: 50%;
+    }
     .tapa {
         width: 7rem;
         height: 7rem;
@@ -489,18 +497,17 @@ input {
 
     .artista {
         grid-column: col-start 2 / span 14;
-        grid-row: row-start 2 / span 3;
+        grid-row: row-start 1 / span 1;
         display: flex;
         max-height: 5rem;
         flex-direction: row;
         max-width: 100%;
         max-height: 100%;
-        text-align: start;
     }
 
     #artistaTapa {
-        width: 12rem;
-        height: 12rem;
+        width: 6rem;
+        height: 6rem;
         margin-left: 10%;
     }
 
@@ -512,11 +519,11 @@ input {
     .seguir {
         min-width: 4rem;
         height: 1.5rem;
-        margin-right: 1rem;
+        margin-left: 1rem;
     }
 
     .redes {
-        max-height: 100%;
+        width: 1rem;
         margin: 0;
     }
 
@@ -577,12 +584,12 @@ input {
     /*carrito.html*/
 
     .agregarMetodo {
-        grid-column: col-start 2 / span 10;
+        grid-column: col-start 1 / span 15;
         grid-row: row-start 7 / span 5;
     }
 
     .carrito {
-        grid-column: col-start 2 / span 14;
+        grid-column: col-start 1 / span 15;
         grid-row: row-start 2 / span 5;
         max-height: 100%;
         overflow: auto;
@@ -653,6 +660,21 @@ input {
     }
 }
 
+    /*carrito.html*/
+
+    .agregarMetodo {
+        grid-column: col-start 1 / span 7;
+        grid-row: row-start 2 / span 1;
+    }
+
+    .carrito {
+        grid-column: col-start 9 / span 8;
+        grid-row: row-start 2 / span 5;
+        max-height: 100%;
+        overflow: auto;
+    }
+
+
 @media (min-width: 1024px) and (max-width: 1280px) {
 
     .redes {
@@ -681,6 +703,19 @@ input {
         grid-column: col-start 13 / span 3;
     }
 
+    /*carrito.html*/
+
+    .agregarMetodo {
+        grid-column: col-start 1 / span 5;
+        grid-row: row-start 2 / span 1;
+    }
+
+    .carrito {
+        grid-column: col-start 9 / span 8;
+        grid-row: row-start 2 / span 5;
+        max-height: 100%;
+        overflow: auto;
+    }
 
 
 }
