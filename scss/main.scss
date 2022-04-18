@@ -1,0 +1,134 @@
+$color-titulo: azure;
+$color-primario: #593196;
+$color-secundario: black;
+$imagen-tarjeta: cover;
+$zoom-leve: scale(1.05);
+$font-principal: 'quicksand';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $color-titulo;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-secundario;
+    font-family: $font-principal, sans-serif;
+    grid-gap: 20px;
+    height: 100%;
+
+    .navegacion {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 1 / span 1;
+        background-color: $color-secundario;
+        border-bottom: 0.1rem solid $color-primario;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    a {
+        margin-right: 0.5rem;
+    }
+
+    footer {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5rem
+    }
+
+    #indexcards {
+        min-height: 70vh;
+
+    }
+
+    .gridc {
+        display: grid;
+        grid-template-columns: repeat(16, [col-start] 1fr);
+        grid-template-rows: repeat(12, [row-start] 1fr);
+        grid-gap: 20px;
+
+        .tarjetaGrande {
+            grid-column: col-start 1 / span 12;
+            grid-row: row-start 1 / span 12;
+            background-size: cover;
+            background-position: center center;
+            transition: transform .5s;
+            border-radius: 10px;
+
+        }
+
+        .tarjetaGrande:hover {
+            transform: scale(1.02);
+        }
+
+        .tarjetaChica1 {
+            grid-column: col-start 13 / span 4;
+            grid-row: row-start 1 / span 4;
+            background-size: cover;
+            background-position: center center;
+            transition: transform .5s;
+            border-radius: 10px;
+        }
+
+        .tarjetaChica1:hover {
+            transform: $zoom-leve;
+        }
+
+        .tarjetaChica2 {
+            grid-column: col-start 13 / span 4;
+            grid-row: row-start 5 / span 4;
+            background-size: cover;
+            background-position: center center;
+            transition: transform .5s;
+            border-radius: 10px;
+        }
+
+        .tarjetaChica2:hover {
+            transform: $zoom-leve;
+        }
+
+        .tarjetaChica3 {
+            grid-column: col-start 13 / span 4;
+            grid-row: row-start 9 / span 4;
+            background-size: cover;
+            background-position: center center;
+            transition: transform .5s;
+            border-radius: 10px;
+        }
+
+        .tarjetaChica3:hover {
+            transform: $zoom-leve;
+        }
+
+        .texto {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: $color-titulo;
+            text-align: left;
+            text-shadow: 0.05em 0 $color-secundario,
+                0 0.05em $color-secundario,
+                -0.05em 0 $color-secundario,
+                0 -0.05em $color-secundario,
+                -0.05em -0.05em $color-secundario,
+                -0.05em 0.05em $color-secundario,
+                0.05em -0.05em $color-secundario,
+                0.05em 0.05em $color-secundario;
+        }
+
+    }
+
+    .titulo {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 11 / span 1;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: azure;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  font-family: "quicksand", sans-serif;
+  grid-gap: 20px;
+  height: 100%; }
+  body .navegacion {
+    grid-column: col-start 2 / span 14;
+    grid-row: row-start 1 / span 1;
+    background-color: black;
+    border-bottom: 0.1rem solid #593196;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; }
+  body a {
+    margin-right: 0.5rem; }
+  body footer {
+    grid-column: col-start 2 / span 14;
+    grid-row: row-start 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem; }
+  body #indexcards {
+    min-height: 70vh; }
+  body .gridc {
+    display: grid;
+    grid-template-columns: repeat(16, [col-start] 1fr);
+    grid-template-rows: repeat(12, [row-start] 1fr);
+    grid-gap: 20px; }
+    body .gridc .tarjetaGrande {
+      grid-column: col-start 1 / span 12;
+      grid-row: row-start 1 / span 12;
+      background-size: cover;
+      background-position: center center;
+      transition: transform .5s;
+      border-radius: 10px; }
+    body .gridc .tarjetaGrande:hover {
+      transform: scale(1.02); }
+    body .gridc .tarjetaChica1 {
+      grid-column: col-start 13 / span 4;
+      grid-row: row-start 1 / span 4;
+      background-size: cover;
+      background-position: center center;
+      transition: transform .5s;
+      border-radius: 10px; }
+    body .gridc .tarjetaChica1:hover {
+      transform: scale(1.05); }
+    body .gridc .tarjetaChica2 {
+      grid-column: col-start 13 / span 4;
+      grid-row: row-start 5 / span 4;
+      background-size: cover;
+      background-position: center center;
+      transition: transform .5s;
+      border-radius: 10px; }
+    body .gridc .tarjetaChica2:hover {
+      transform: scale(1.05); }
+    body .gridc .tarjetaChica3 {
+      grid-column: col-start 13 / span 4;
+      grid-row: row-start 9 / span 4;
+      background-size: cover;
+      background-position: center center;
+      transition: transform .5s;
+      border-radius: 10px; }
+    body .gridc .tarjetaChica3:hover {
+      transform: scale(1.05); }
+    body .gridc .texto {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: azure;
+      text-align: left;
+      text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black; }
+  body .titulo {
+    grid-column: col-start 2 / span 14;
+    grid-row: row-start 11 / span 1;
+    text-align: center;
+    margin-top: 1rem; }
