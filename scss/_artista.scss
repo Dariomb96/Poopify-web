@@ -1,0 +1,75 @@
+.gridArtista {
+    display: grid;
+    grid-template-columns: repeat(16, [col-start] 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.banner {
+    grid-column: col-start 1 / span 16;
+    box-shadow: 8px 8px 0 -3px $color-secundario, 8px 8px 0 -1px $color-primario;
+
+    .pepito {
+        height: 25vh;
+        width: 100%;
+        background-position: center center;
+        object-fit: cover;
+    }
+}
+
+.mainArtista {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 4 / span 1;
+}
+
+.artista {
+    grid-column: col-start 14 / span 4;
+    grid-row: row-start 4 / span 4;
+    align-content: center;
+    text-align: center;
+    border-left: 1px solid $color-primario;
+    min-height: 44vh;
+}
+
+.carruselArtista {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 5 / span 4;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.seguir {
+    margin-top: 0.5rem;
+    width: 5rem;
+    font-family: $font-secundaria;
+    margin-top: 0.5rem;
+    padding: 0.1rem;
+    background-color: $color-secundario;
+    color: $color-titulo;
+    box-shadow: 5px 5px 0 -3px $color-secundario, 5px 5px 0 -1px $color-primario;
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    .linkRedes {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.acercaDe {
+    grid-column: col-start 2 / span 12;
+    grid-row: row-start 5 / span 6;
+    overflow: auto;
+
+    .descripcion {
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-family: $font-secundaria;
+    }
+}

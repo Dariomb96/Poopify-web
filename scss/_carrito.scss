@@ -1,0 +1,68 @@
+.agregarMetodo {
+    grid-column: col-start 1 / span 5;
+    grid-row: row-start 2 /span 5;
+    border: 1px solid $color-primario;
+
+
+    fieldset {
+        padding: 0.5rem;
+
+
+        .metodoPago {
+            display: flex;
+            flex-direction: column;
+
+
+            .selecMetodo {
+                max-width: fit-content;
+                color: $color-secundario;
+            }
+        }
+
+        .fechaCaducidad {
+            display: flex;
+            justify-content: space-between;
+            width: 13rem;
+            flex-wrap: nowrap;
+        }
+    }
+
+    input {
+        color: $color-secundario;
+    }
+}
+
+
+
+.carrito {
+    grid-column: col-start 10 / span 8;
+    grid-row: row-start 2 / span 6;
+    box-shadow: 5px 5px 0 -3px $color-secundario, 5px 5px 0 -1px $color-primario;
+
+
+    .albumCarrito {
+        display: flex;
+
+
+        .tapaCarrito {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        .descripcionCarrito {
+            align-self: center;
+            margin-left: 0.5rem;
+        }
+
+        .precio {
+            justify-self: flex-end;
+            align-self: center;
+            margin-left: auto;
+            margin-right: 1rem;
+            border-left: 1px solid $color-primario;
+            padding-left: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.perfil {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 1 / span 3;
+    display: flex;
+}
+
+.textoPerfil {
+    padding-left: 1rem;
+}
+
+.descripcionPerfil {
+    padding-top: 1rem;
+}
+
+.nombrePerfil {
+    text-decoration: underline;
+}
+
+.navMenu {
+    grid-column: col-start 1 / span 12;
+    grid-row: row-start 4 / span 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    border-bottom: 1px solid $color-primario;
+    max-width: 100%;
+
+
+    .navMenuBotones {
+        padding-right: 5rem;
+        padding-left: 5rem;
+        align-self: center;
+        text-decoration: none;
+    }
+
+    .bordeMenu {
+        border-right: 1px solid $color-primario;
+    }
+}
+
+.carrusel {
+    grid-column: col-start 1 / span 12;
+    grid-row: row-start 5 / span 9;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow-x: hidden;
+
+
+    .album {
+        min-width: 20%;
+        padding-bottom: 2rem;
+    }
+}

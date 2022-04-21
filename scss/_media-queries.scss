@@ -1,0 +1,331 @@
+@media (max-width: 600px) {
+    input {
+        overflow: hidden;
+    }
+
+    /*index.html*/
+
+    .tarjetaGrande {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 2 / span 3;
+    }
+
+    .tarjetaChica1 {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 5 / span 2;
+    }
+
+    .tarjetaChica2 {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 7 / span 2;
+    }
+
+    .tarjetaChica3 {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 9 / span 2;
+    }
+
+    /*perfil*/
+
+    .perfil {
+        max-height: 50%;
+    }
+
+    .tapaRedonda {
+        width: 5rem;
+        height: 5rem;
+
+
+        #editar {
+            width: 1rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    .navMenu {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 2 / span 1;
+        margin-top: 5rem;
+
+
+        .navMenuBotones {
+            padding-left: 0%;
+            padding-right: 3%;
+
+            .fsbtn {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .carrusel {
+        grid-column: col-start 2 / span 13;
+        grid-row: row-start 3 / span 10;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        .album {
+            width: 50%;
+
+            .tapa {
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+    }
+
+
+    /*artista.html*/
+
+    .banner {
+        display: none;
+    }
+
+    .artista {
+        grid-column: col-start 2 / span 14;
+        grid-row: row-start 1 / span 1;
+        display: flex;
+        max-height: 5rem;
+        flex-direction: row;
+        max-width: 100%;
+        max-height: 100%;
+
+        #artistaDesc {
+            display: inline-block;
+            text-align: center;
+
+            #artistaTapa {
+                width: 6rem;
+                height: 6rem;
+                margin-left: 10%;
+            }
+
+            .seguir {
+                min-width: 4rem;
+                height: 1.5rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .carruselArtista {
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        .album {
+            width: 50%;
+
+            .tapa {
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+    }
+
+    .redes {
+        width: 100%;
+        margin-left: 25%;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+    }
+
+    /*album.html*/
+
+    .albumDiv {
+        grid-column: col-start 2 / span 10;
+        grid-row: row-start 2 / span 4;
+
+        #tapaAlbum {
+            display: none;
+        }
+    }
+
+    .infoCompra {
+        grid-column: col-start 12 / span 4;
+        grid-row: row-start 2 / span 5;
+        margin: 0;
+    }
+
+    .textoDescripcion {
+        margin: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    .descp {
+        margin: 0;
+        overflow: auto;
+        max-height: 20rem;
+    }
+
+    .albumIco {
+        display: inline;
+        width: 25%;
+    }
+
+    .comprarBoton {
+        height: 20%;
+    }
+
+    .albumReproductor {
+        grid-column: col-start 2 / span 15;
+        grid-row: row-start 6 / span 6;
+
+        iframe {
+            max-height: 100%;
+        }
+    }
+
+    .relacionado {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    /*perfil*/
+
+    .navMenu {
+        grid-column: col-start 2 / span 12;
+        font-size: 1.1rem;
+
+        .navMenuBotones {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+
+    .carrusel {
+        grid-column: col-start 2 / span 12;
+        justify-content: flex-start;
+
+        .tapa {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+
+    /*artista.html*/
+
+    .artista {
+        grid-column: col-start 14 / span 3;
+
+        #artistaTapa {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    .redes {
+        display: block;
+        text-align: center;
+        width: 9rem;
+    }
+
+    .carruselArtista {
+        grid-column: col-start 2 / span 12;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        .album {
+            min-width: 50%;
+
+            .tapa {
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+    }
+
+    /*album.html*/
+
+    .albumDiv {
+        grid-column: col-start 1 / span 9;
+
+        #tapaAlbum {
+            display: none;
+        }
+    }
+
+    .infoCompra {
+        grid-column: col-start 10 / span 3;
+    }
+
+    .albumReproductor {
+        grid-column: col-start 1 / span 12;
+    }
+
+    .relacionado {
+        grid-column: col-start 13 / span 4;
+
+        .tapa {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+}
+
+/*carrito.html*/
+
+.agregarMetodo {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 2 / span 1;
+}
+
+.carrito {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 1 / span 1;
+    max-height: 100%;
+    overflow: auto;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+    /*artista.html*/
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    /*album.html*/
+
+    .albumDiv {
+        grid-column: col-start 2 / span 9;
+    }
+
+    .iconosAlbum {
+        margin-left: -0.3rem;
+        width: 7rem;
+    }
+
+    .infoCompra {
+        grid-column: col-start 11 / span 2;
+    }
+
+    .albumReproductor {
+        grid-column: col-start 2 / span 11;
+    }
+
+    .relacionado {
+        grid-column: col-start 13 / span 3;
+    }
+
+    /*carrito.html*/
+
+    .agregarMetodo {
+        grid-column: col-start 1 / span 5;
+        grid-row: row-start 2 / span 1;
+    }
+
+    .carrito {
+        grid-column: col-start 9 / span 8;
+        grid-row: row-start 2 / span 5;
+        max-height: 100%;
+        overflow: auto;
+    }
+}
