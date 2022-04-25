@@ -1,0 +1,6 @@
+@mixin tarjeta{
+    background-size: cover;
+    background-position: center center;
+    transition: transform .5s;
+    border-radius: 10px;
+}

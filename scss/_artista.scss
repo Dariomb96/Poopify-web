@@ -7,7 +7,7 @@
 
 .banner {
     grid-column: col-start 1 / span 16;
-    box-shadow: 8px 8px 0 -3px $color-secundario, 8px 8px 0 -1px $color-primario;
+    box-shadow: 8px 8px 0 -3px map-get($colores, secundario), 8px 8px 0 -1px map-get($colores, primario);
 
     .pepito {
         height: 25vh;
@@ -27,7 +27,7 @@
     grid-row: row-start 4 / span 4;
     align-content: center;
     text-align: center;
-    border-left: 1px solid $color-primario;
+    border-left: 1px solid map-get($colores, primario);
     min-height: 44vh;
 }
 
@@ -46,9 +46,9 @@
     font-family: $font-secundaria;
     margin-top: 0.5rem;
     padding: 0.1rem;
-    background-color: $color-secundario;
-    color: $color-titulo;
-    box-shadow: 5px 5px 0 -3px $color-secundario, 5px 5px 0 -1px $color-primario;
+    background-color: map-get($colores, secundario);
+    color: map-get($colores, titulo);
+    box-shadow: 5px 5px 0 -3px map-get($colores, secundario), 5px 5px 0 -1px map-get($colores, primario);
 
     .redes {
         display: flex;

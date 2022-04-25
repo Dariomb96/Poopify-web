@@ -265,6 +265,9 @@ body {
   border: 1px solid #593196; }
   .agregarMetodo fieldset {
     padding: 0.5rem; }
+    .agregarMetodo fieldset input, .agregarMetodo fieldset .metodoPago .selecMetodo, .agregarMetodo fieldset .limpiar {
+      color: azure;
+      background-color: black; }
     .agregarMetodo fieldset .metodoPago {
       display: flex;
       flex-direction: column; }
@@ -276,8 +279,13 @@ body {
       justify-content: space-between;
       width: 13rem;
       flex-wrap: nowrap; }
-  .agregarMetodo input {
-    color: black; }
+    .agregarMetodo fieldset .enviar {
+      color: azure;
+      background-color: black; }
+    .agregarMetodo fieldset .limpiar {
+      margin-left: 1rem;
+      padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+      border: solid 1px #593196; }
 
 .carrito {
   grid-column: col-start 10 / span 8;
@@ -302,7 +310,7 @@ body {
       padding-bottom: 1rem; }
 
 @media (max-width: 600px) {
-  input {
+  input, .agregarMetodo fieldset .metodoPago .selecMetodo, .agregarMetodo fieldset .limpiar {
     overflow: hidden; }
   /*index.html*/
   .tarjetaGrande {
@@ -408,7 +416,15 @@ body {
     .albumReproductor iframe {
       max-height: 100%; }
   .relacionado {
-    display: none; } }
+    display: none; }
+  .agregarMetodo {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 2 / span 1; }
+  .carrito {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 1 / span 1;
+    max-height: 100%;
+    overflow: auto; } }
 
 @media (min-width: 600px) and (max-width: 1024px) {
   /*perfil*/
@@ -456,18 +472,16 @@ body {
     grid-column: col-start 13 / span 4; }
     .relacionado .tapa {
       width: 8rem;
-      height: 8rem; } }
-
-/*carrito.html*/
-.agregarMetodo {
-  grid-column: col-start 1 / span 14;
-  grid-row: row-start 2 / span 1; }
-
-.carrito {
-  grid-column: col-start 1 / span 14;
-  grid-row: row-start 1 / span 1;
-  max-height: 100%;
-  overflow: auto; }
+      height: 8rem; }
+  /*carrito.html*/
+  .agregarMetodo {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 2 / span 1; }
+  .carrito {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 1 / span 1;
+    max-height: 100%;
+    overflow: auto; } }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   /*artista.html*/

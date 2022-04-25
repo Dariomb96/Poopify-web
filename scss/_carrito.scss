@@ -1,12 +1,16 @@
 .agregarMetodo {
     grid-column: col-start 1 / span 5;
     grid-row: row-start 2 /span 5;
-    border: 1px solid $color-primario;
+    border: 1px solid map-get($colores, primario);
 
 
     fieldset {
         padding: 0.5rem;
 
+        input{
+            color: map-get($colores, titulo);
+            background-color: map-get($colores, secundario);
+        }
 
         .metodoPago {
             display: flex;
@@ -14,8 +18,9 @@
 
 
             .selecMetodo {
+                @extend input;
                 max-width: fit-content;
-                color: $color-secundario;
+                color: map-get($colores, secundario);
             }
         }
 
@@ -25,10 +30,16 @@
             width: 13rem;
             flex-wrap: nowrap;
         }
-    }
-
-    input {
-        color: $color-secundario;
+        .enviar{
+            color: map-get($colores, titulo);
+            background-color: map-get($colores, secundario);
+        }
+        .limpiar{
+            @extend input;
+            margin-left: 1rem;
+            padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+            border: solid 1px map-get($colores, primario);
+        }
     }
 }
 
@@ -37,7 +48,7 @@
 .carrito {
     grid-column: col-start 10 / span 8;
     grid-row: row-start 2 / span 6;
-    box-shadow: 5px 5px 0 -3px $color-secundario, 5px 5px 0 -1px $color-primario;
+    box-shadow: 5px 5px 0 -3px map-get($colores, secundario), 5px 5px 0 -1px map-get($colores, primario);
 
 
     .albumCarrito {
@@ -59,7 +70,7 @@
             align-self: center;
             margin-left: auto;
             margin-right: 1rem;
-            border-left: 1px solid $color-primario;
+            border-left: 1px solid map-get($colores, primario);
             padding-left: 1rem;
             padding-top: 1rem;
             padding-bottom: 1rem;

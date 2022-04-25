@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: $color-titulo;
+    color: map-get($colores, titulo);
     box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: $color-secundario;
+    background: map-get($colores, secundario);
 }
 
 /* Handle */
@@ -26,7 +26,7 @@
 }
 
 body {
-    background-color: $color-secundario;
+    background-color: map-get($colores, secundario);
     font-family: $font-principal, sans-serif;
     grid-gap: 20px;
     height: 100%;
@@ -34,8 +34,8 @@ body {
     .navegacion {
         grid-column: col-start 2 / span 14;
         grid-row: row-start 1 / span 1;
-        background-color: $color-secundario;
-        border-bottom: 0.1rem solid $color-primario;
+        background-color: map-get($colores, secundario);
+        border-bottom: 0.1rem solid map-get($colores, primario);
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -72,14 +72,14 @@ body {
         width: 12rem;
         margin: 0.5rem;
         border-radius: 1rem;
-        box-shadow: 8px 8px 0 -3px $color-secundario, 8px 8px 0 -1px $color-primario;
+        box-shadow: 8px 8px 0 -3px map-get($colores, secundario), 8px 8px 0 -1px map-get($colores, primario);
     }
 
     .tapaRedonda {
         width: 12rem;
         height: 12rem;
         border-radius: 10rem;
-        box-shadow: 8px 8px 0 -3px $color-secundario, 8px 8px 0 -1px $color-primario;
+        box-shadow: 8px 8px 0 -3px map-get($colores, secundario), 8px 8px 0 -1px map-get($colores, primario);
     }
 
     .tapaChica {

@@ -180,8 +180,19 @@
     .relacionado {
         display: none;
     }
+
+.agregarMetodo {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 2 / span 1;
 }
 
+.carrito {
+    grid-column: col-start 1 / span 14;
+    grid-row: row-start 1 / span 1;
+    max-height: 100%;
+    overflow: auto;
+}
+}
 @media (min-width: 600px) and (max-width: 1024px) {
 
     /*perfil*/
@@ -264,7 +275,7 @@
             height: 8rem;
         }
     }
-}
+
 
 /*carrito.html*/
 
@@ -279,8 +290,7 @@
     max-height: 100%;
     overflow: auto;
 }
-
-
+}
 @media (min-width: 1024px) and (max-width: 1280px) {
 
     /*artista.html*/

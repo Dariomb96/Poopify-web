@@ -1,11 +1,8 @@
 .tarjetaGrande {
     grid-column: col-start 1 / span 12;
     grid-row: row-start 1 / span 12;
-    background-size: cover;
-    background-position: center center;
-    transition: transform .5s;
-    border-radius: 10px;
-
+    @include tarjeta;
+    
     &:hover {
         transform: scale(1.02);
     }
@@ -14,11 +11,8 @@
 .tarjetaChica1 {
     grid-column: col-start 13 / span 4;
     grid-row: row-start 1 / span 4;
-    background-size: cover;
-    background-position: center center;
-    transition: transform .5s;
-    border-radius: 10px;
-
+    @include tarjeta;
+    
     &:hover {
         transform: $zoom-leve;
     }
@@ -27,10 +21,7 @@
 .tarjetaChica2 {
     grid-column: col-start 13 / span 4;
     grid-row: row-start 5 / span 4;
-    background-size: cover;
-    background-position: center center;
-    transition: transform .5s;
-    border-radius: 10px;
+    @include tarjeta;
 
     &:hover {
         transform: $zoom-leve;
@@ -40,10 +31,7 @@
 .tarjetaChica3 {
     grid-column: col-start 13 / span 4;
     grid-row: row-start 9 / span 4;
-    background-size: cover;
-    background-position: center center;
-    transition: transform .5s;
-    border-radius: 10px;
+    @include tarjeta;
 
     &:hover {
         transform: $zoom-leve;
@@ -55,16 +43,16 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: $color-titulo;
+    color: map-get($colores, titulo);
     text-align: left;
-    text-shadow: 0.05em 0 $color-secundario,
-        0 0.05em $color-secundario,
-        -0.05em 0 $color-secundario,
-        0 -0.05em $color-secundario,
-        -0.05em -0.05em $color-secundario,
-        -0.05em 0.05em $color-secundario,
-        0.05em -0.05em $color-secundario,
-        0.05em 0.05em $color-secundario;
+    text-shadow: 0.05em 0 map-get($colores, secundario),
+        0 0.05em map-get($colores, secundario),
+        -0.05em 0 map-get($colores, secundario),
+        0 -0.05em map-get($colores, secundario),
+        -0.05em -0.05em map-get($colores, secundario),
+        -0.05em 0.05em map-get($colores, secundario),
+        0.05em -0.05em map-get($colores, secundario),
+        0.05em 0.05em map-get($colores, secundario);
 }
 
 .titulo {
