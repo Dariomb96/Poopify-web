@@ -1,7 +1,7 @@
 {
   "name": "poopify-betancourt",
   "version": "1.0.0",
-  "description": "",
+  "description": "proyecto de sitio web para compra-venta de musica con ejemplos para cada sector",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Dariomb96/Poopify-Betancourt#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "bootstrap":"^v5.1.3"
   }
 }
